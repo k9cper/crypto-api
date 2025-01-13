@@ -63,31 +63,31 @@ const Coin = () => {
                   </thead>
                   <tbody>
                     <tr className="bg-white border-b hover:bg-gray-50">
-                      <td className="px-6 py-4">{coin.market_cap_rank}</td>
+                      <td className="px-6 py-4">#{coin.market_cap_rank}</td>
                       <td className="px-6 py-4">
                         {coin.market_data?.price_change_percentage_1h_in_currency
                           ? coin.market_data.price_change_percentage_1h_in_currency.pln
-                          : 'N/A'}
+                          : 'N/A'}%
                       </td>
                       <td className="px-6 py-4">
                         {coin.market_data?.price_change_percentage_24h_in_currency
                           ? coin.market_data.price_change_percentage_24h_in_currency.pln
-                          : 'N/A'}
+                          : 'N/A'}%
                       </td>
                       <td className="px-6 py-4">
                         {coin.market_data?.price_change_percentage_7d_in_currency
                           ? coin.market_data.price_change_percentage_7d_in_currency.pln
-                          : 'N/A'}
+                          : 'N/A'}%
                       </td>
                       <td className="px-6 py-4">
                         {coin.market_data?.price_change_percentage_30d_in_currency
                           ? coin.market_data.price_change_percentage_30d_in_currency.pln
-                          : 'N/A'}
+                          : 'N/A'}%
                       </td>
                       <td className="px-6 py-4">
                         {coin.market_data?.price_change_percentage_1y_in_currency
                           ? coin.market_data.price_change_percentage_1y_in_currency.pln
-                          : 'N/A'}
+                          : 'N/A'}%
                       </td>
                     </tr>
                   </tbody>
