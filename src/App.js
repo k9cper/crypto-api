@@ -85,13 +85,13 @@ function App() {
         <>
           <Navbar onSearch={handleSearch} />
           <Routes>
-            <Route path="/crypto-api" element={<Coins coins={coins} />} /> 
+            <Route path="/crypto-api/" element={<Coins coins={coins} />} /> 
             <Route path="/coin/:coinid" element={<Coin />} /> 
           </Routes>
         </>
       )}
 
-      {location.pathname === "/crypto-api" && !loading && (
+      {location.pathname === "/crypto-api/" && !loading && (
         <div className="flex justify-center items-center mt-4">
           <button
             className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2"
