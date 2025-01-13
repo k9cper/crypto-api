@@ -85,7 +85,7 @@ function App() {
         <>
           <Navbar onSearch={handleSearch} />
           <Routes>
-            <Route path="/" element={<Coins coins={coins} />} /> // Wyświetlanie listy kryptowalut
+            <Route path="/crypto-api" element={<Coins coins={coins} />} /> // Wyświetlanie listy kryptowalut
             <Route path="/coin/:coinid" element={<Coin />} /> // Przekierowanie do wyświetlania szczegółów kryptowaluty
           </Routes>
         </>

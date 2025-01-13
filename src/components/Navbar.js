@@ -13,7 +13,7 @@ function Navbar({ onSearch }) {
   return (
     <nav className="flex flex-col sm:flex-row justify-between items-center mb-10 px-6 sm:px-20 py-4 bg-white shadow">
       {/* Logo */}
-      <Link to="/" className="text-gray-800 hover:text-gray-900 mb-4 sm:mb-0">
+      <Link to="/crypto-api" className="text-gray-800 hover:text-gray-900 mb-4 sm:mb-0">
         <h1 className="text-lg sm:text-xl font-bold">
           Crypto API<span className="ms-2 text-xs font-semibold text-gray-500">FREE</span>
         </h1>
