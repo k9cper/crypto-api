@@ -29,11 +29,10 @@ const Coin = () => {
     <div className="container mx-auto px-4 sm:px-6 lg:px-8">
       <div className="bg-white shadow-lg rounded-lg m-4 p-6">
         {loading ? (
-          <Loading /> // Używamy Loading jako komponentu
+          <Loading />
         ) : (
           <div>
             <div className="flex flex-col sm:flex-row items-center justify-center p-4 text-center sm:text-left">
-              // Sprawdzamy czy image istnieje i wyświetlając logo kryptowaluty jeśli nie to nie pokazujemy nic 
               {coin.image ? (
                 <img
                   src={coin.image.large}
@@ -66,7 +65,6 @@ const Coin = () => {
                     <tr className="bg-white border-b hover:bg-gray-50">
                       <td className="px-6 py-4">{coin.market_cap_rank}</td>
                       <td className="px-6 py-4">
-                        // Sprawdzamy czy price_change_percentage_1h_in_currency istnieje i wyświetlając zmiany w PLN jeśli nie to nie pokazujemy N/A
                         {coin.market_data?.price_change_percentage_1h_in_currency
                           ? coin.market_data.price_change_percentage_1h_in_currency.pln
                           : 'N/A'}
@@ -152,7 +150,6 @@ const Coin = () => {
                 <li className="px-4 py-2 bg-gray-50 rounded-lg">
                   {coin.market_data ? (
                     <h1>
-                      // toLocaleString() wykorzystany do formatowania wyników na podstawie waluty PLN
                       Najwyższa cena 24h: {coin.market_data.high_24h.pln.toLocaleString()}
                       <span className="text-xs text-rose-500"> PLN</span>
                     </h1>

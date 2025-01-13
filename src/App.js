@@ -85,13 +85,12 @@ function App() {
         <>
           <Navbar onSearch={handleSearch} />
           <Routes>
-            <Route path="/crypto-api" element={<Coins coins={coins} />} /> // Wyświetlanie listy kryptowalut
-            <Route path="/coin/:coinid" element={<Coin />} /> // Przekierowanie do wyświetlania szczegółów kryptowaluty
+            <Route path="/crypto-api" element={<Coins coins={coins} />} /> 
+            <Route path="/coin/:coinid" element={<Coin />} /> 
           </Routes>
         </>
       )}
 
-      {/* Jeśli lokalizacja jest inna niż homePage to nie wyświetlaj przycisku "Load More" i "Reset" */}
       {location.pathname === "/" && !loading && (
         <div className="flex justify-center items-center mt-4">
           <button
